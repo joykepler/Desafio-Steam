@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0E131E;
+    font-family: "Inter", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 80px;
+    padding: 0px 32px 0px 32px;
+    background-color: #1B2838;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.nav-notifications {
+    display: flex;
+    gap: 65rem;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.notifications {
+    display: flex;
+    gap: 50px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+#bell {
+    padding: 10px;
+    background-color: #0094FF3D;
+    border-radius: 30px;
+}
+
+
+.menu {
+    display: none;
+}
+
+.secao-primaria {
+    height: 500px;
+    background-image: url(Assets/banner.png);
+    background-size: 100%;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+}
+
+.transparencia {
+    width: auto;
+    height: 100%;
+    background: linear-gradient(to right, rgba(7, 3, 19, 0.99), rgba(2, 2, 3, 0.445)); */
+}
+
+.sp__conteiner {
+    display: flex;
+    margin-left: 250px;
+    padding-top: 100px;
+}
+
+.sp__paragrafo {
+    max-width: 350px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 19px;
+}
+
+.sp__botao {
+    width: 229px;
+    height: 55px;
+    padding: 18px 48px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0094FF;
+    color: #FFFFFF;
+    margin-top: 19px;
+    font-weight: 700;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.page {
+    width: 64px;
+    height: 6px;
+    border-radius: 1px;
+    background-color: #FFFFFF;
+}
+
+#page-two {
+    background-color: #0094FF;
+}
+
+.secao-secundaria {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    width: 75rem;
+    height: 80px;
+    background-color: #1B2838;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 70px;
+}
+
+li {
+    color: #FFFFFF;
+}
+
+#li-1 {
+    color: #0094FF;
+    padding: 25px;
+    margin-top: 7px;
+    border-bottom: 3px solid #0094FF;
+}
+
+.secao-terciaria {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.search {
+    width: 75rem;
+    height: 60px;
+    background-color: #1B2838;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+}  
+
+.search::placeholder {
+    color: #FFFFFF;
+}
+
+.lupa {
+    position: absolute; 
+    top: 89.2%; 
+    right: 21.5%;
+}
+
+.secao-quarternaria {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.rodape {
+    background-color: #1B2838;
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__imagem {
+    width: 30px;
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        height: 60px;
+        flex-direction: row-reverse;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .perfil {
+        gap: 7px;
+    }
+
+    .notifications {
+        gap: 20px;
+    }
+
+    #bell {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .secao-primaria {
+        background-size: 250%;
+        background-repeat: no-repeat;
+        height: 350px;
+    }
+
+    .sp__conteiner {
+        margin-left: 20px;
+    }
+
+    .sp__logo {
+        width: 85.11px;
+    }
+
+    .sp__paragrafo {
+        max-width: 300px;
+    }
+
+    .sp__botao {
+        width: 83px;
+        height: 12px;
+        font-size: 10px;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .search {
+        width: 300px;
+    }
+
+    .secao-quarternaria {
+        flex-direction: column;
+
+        width: 327px;
+    }
+
+    #game-four {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    header {
+        height: 60px;
+        flex-direction: row-reverse;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .perfil {
+        gap: 7px;
+    }
+
+    .notifications {
+        gap: 20px;
+    }
+
+    #bell {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
