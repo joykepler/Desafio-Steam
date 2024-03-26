@@ -232,6 +232,7 @@ li {
 
     .sp__conteiner {
         margin-left: 32px;
+        padding-top: 60px;
     }
 
     .sp__conteudo {
@@ -265,8 +266,8 @@ li {
     }
 
     .lupa {
-        top: 42.7%;
-        left: 90.5%;
+        top: 37%;
+        left: 88%;
     }
 
     .sq__imagens {
@@ -367,7 +368,7 @@ li {
     }
 
     .lupa {
-        top: 71%;
+        top: 57.1%;
         left: 80.5%;
     }
 
