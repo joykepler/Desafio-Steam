@@ -10,6 +10,7 @@ body {
     font-family: "Inter", sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 header {
@@ -70,7 +71,7 @@ nav {
 .transparencia {
     width: auto;
     height: 100%;
-    background: linear-gradient(to right, rgba(7, 3, 19, 0.99), rgba(2, 2, 3, 0.445)); */
+    background: linear-gradient(to right, rgba(7, 3, 19, 0.99), rgba(2, 2, 3, 0.445)); 
 }
 
 .sp__conteiner {
@@ -89,7 +90,6 @@ nav {
 .sp__botao {
     width: 229px;
     height: 55px;
-    padding: 18px 48px;
     border-radius: 4px;
     border: none;
     background-color: #0094FF;
@@ -157,6 +157,9 @@ li {
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
+    outline-style: none;
+    color: #FFFFFF;
+    font-size: 18px;
 }  
 
 .search::placeholder {
@@ -165,22 +168,25 @@ li {
 
 .lupa {
     position: absolute; 
-    top: 89.2%; 
-    right: 21.5%;
+    top: 89.3%; 
+    right: 19.6%;
 }
 
 .secao-quarternaria {
     margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.sq__imagens {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 80px;
 }
 
 .rodape {
     background-color: #1B2838;
     width: auto;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: center;
 }
@@ -188,6 +194,102 @@ li {
 .rodape__imagem {
     width: 30px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    header {
+        height: 60px;
+        flex-direction: row-reverse;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .perfil {
+        gap: 7px;
+    }
+
+    .notifications {
+        gap: 20px;
+    }
+
+    #bell {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .secao-primaria {
+        height: 300px;
+    }
+
+    .sp__conteiner {
+        margin-left: 32px;
+    }
+
+    .sp__conteudo {
+        max-width: 20rem;
+    }
+
+    .sp__logo {
+        width: 85.11px;
+    }
+
+    .sp__paragrafo {
+        font-size: 14px;
+    }
+
+    .sp__botao {
+        height: 28px;
+        width: 143px;
+        font-size: 10px;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .search {
+        width: 704px;
+    }
+
+    .lupa {
+        top: 42.7%;
+        left: 90.5%;
+    }
+
+    .sq__imagens {
+        max-width: 800px;
+    }
+
+    .sq__imagem {
+        width: 225px;
+    }
+
+    #game-four {
+        display: none;
+    }
+
+    .rodape {
+        height: 60px;
+    }
+
+    .rodape__imagem {
+        width: 40px;
+    }
+}
+
 
 @media screen and (max-width: 767px) {
 
@@ -223,12 +325,18 @@ li {
 
     .secao-primaria {
         background-size: 250%;
+        background-position-y: 25%;
+        background-position-x: 10%;
         background-repeat: no-repeat;
-        height: 350px;
+        height: 375px;
     }
 
     .sp__conteiner {
-        margin-left: 20px;
+        margin-left: 32px;
+    }
+
+    .sp__conteudo {
+        max-width: 20rem;
     }
 
     .sp__logo {
@@ -236,12 +344,12 @@ li {
     }
 
     .sp__paragrafo {
-        max-width: 300px;
+        font-size: 14px;
     }
 
     .sp__botao {
-        width: 83px;
-        height: 12px;
+        height: 28px;
+        width: 143px;
         font-size: 10px;
     }
 
@@ -251,51 +359,32 @@ li {
 
     .nav-bar {
         display: none;
+
     }
 
     .search {
-        width: 300px;
+        width: 327px;
     }
 
-    .secao-quarternaria {
-        flex-direction: column;
+    .lupa {
+        top: 71%;
+        left: 80.5%;
+    }
 
-        width: 327px;
+    .sq__imagens {
+        flex-direction: column;
+        align-items: center;
     }
 
     #game-four {
         display: none;
     }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-    header {
+    .rodape {
         height: 60px;
-        flex-direction: row-reverse;
     }
 
-    .logo {
-        display: none;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .perfil {
-        gap: 7px;
-    }
-
-    .notifications {
-        gap: 20px;
-    }
-
-    #bell {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row-reverse;
+    .rodape__imagem {
+        width: 40px;
     }
 }
