@@ -201,6 +201,19 @@ li {
     width: 30px;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;          
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:  #1B2838;          
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #0095ff1f;    
+    border-radius: 20px;   
+}
+
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     header {
         height: 60px;
