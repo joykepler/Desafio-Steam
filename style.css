@@ -49,6 +49,12 @@ nav {
   align-items: center;
 }
 
+.perfil__imagem {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 #bell {
     padding: 10px;
     background-color: #0094FF3D;
@@ -158,7 +164,7 @@ li {
     border-radius: 4px;
     padding: 10px 20px;
     outline-style: none;
-    color: #FFFFFF;
+    color: #8d8d8d;
     font-size: 18px;
 }  
 
@@ -167,7 +173,7 @@ li {
 }
 
 .lupa {
-    position: absolute; 
+    position: absolute;
     top: 89.3%; 
     right: 19.6%;
 }
@@ -268,10 +274,6 @@ li {
     .lupa {
         top: 37%;
         left: 88%;
-    }
-
-    .sq__imagens {
-        max-width: 800px;
     }
 
     .sq__imagem {
