@@ -194,7 +194,7 @@ li {
     position: absolute;
     top: 50%;
     bottom: 50%;
-    right: 2%;
+    right: 4%;
     margin: auto;
 }
 
@@ -405,6 +405,7 @@ body::-webkit-scrollbar {
 
     .search {
         width: 270px;
+        padding-left: 20px;
     }
 
     .sq__imagens {
